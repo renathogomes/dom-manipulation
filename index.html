@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício</title>
-    
-    <style>
-      main, section {
-        border-color: black;
-        border-style: solid;
-      }
 
-      .title {
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício</title>
 
-      .main-content {
-        background-color: yellow;
-      }
+  <style>
+    main,
+    section {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin: 0 auto;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
-    </style>
-  </head>
-  <body>
-    <header> 
-      <h1 class="title">Desafio - JavaEscripito</h1>
-    </header>    
-    <main class="main-content">
-      <section class="center-content">
-        <p>Texto padrão do nosso site</p>
-        <p>-----</p>
-        <p>Trybe</p>
-      </section>
-    </main>
-    <footer>
-      <p>Último parágrafo.</p>
-    </footer>
-    <script>
-      // Seu código aqui
-const euDaquiADoisAnos = document.querySelectorAll('.center-content p')[1];
-euDaquiADoisAnos.innerText = 'Daqui a dois anos serei Pleno/Senior em uma empresa americana'
+    .main-content {
+      background-color: yellow;
+    }
 
-    </script>
-  </body>
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Desafio - JavaEscripito</h1>
+  </header>
+  <main class="main-content">
+    <section class="center-content">
+      <p>Texto padrão do nosso site</p>
+      <p>-----</p>
+      <p>Trybe</p>
+    </section>
+  </main>
+  <footer>
+    <p>Último parágrafo.</p>
+  </footer>
+  <script>
+    // Seu código aqui
+    const euDaquiADoisAnos = document.querySelectorAll('.center-content p')[1];
+    euDaquiADoisAnos.innerText = 'Daqui a dois anos serei Pleno/Senior em uma empresa americana';
+    const elementoAmarelo = document.querySelector('.main-content');
+    elementoAmarelo.style.background = 'rgb(76, 164, 109)';
+
+  </script>
+</body>
+
 </html>
